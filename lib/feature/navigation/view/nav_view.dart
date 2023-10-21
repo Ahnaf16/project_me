@@ -21,6 +21,7 @@ class NavView extends HookConsumerWidget {
         return null;
       },
     );
+
     return Scaffold(
       appBar: AppBar(
         title: Text(path.toUpperCase()),

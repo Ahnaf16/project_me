@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "469679123074",
+    "project_id": "ahnaf-sakil",
+    "storage_bucket": "ahnaf-sakil.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:469679123074:android:c3c6b5ec7f65113c22229b",
+        "android_client_info": {
+          "package_name": "com.marj.project_me"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB47JeLG2p_CTx8r6UWSWiZMQ2Z2Lvdxrg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

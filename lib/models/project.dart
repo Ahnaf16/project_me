@@ -24,14 +24,14 @@ class Project {
     );
   }
 
-  final List<Contributor> contributors;
+  final String name;
+  final String icon;
   final List<String> covers;
   final String description;
-  final String hostUrl;
-  final String icon;
-  final String name;
-  final String source;
   final DateTime startDate;
+  final List<Contributor> contributors;
+  final String hostUrl;
+  final String source;
 }
 
 class Contributor {

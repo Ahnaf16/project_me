@@ -1,11 +1,9 @@
 import 'package:firebase_core/firebase_core.dart';
-import 'package:flex_color_scheme/flex_color_scheme.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_web_plugins/url_strategy.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:project_me/route/route_config.dart';
+import 'package:project_me/theme/theme.dart';
 
 import 'firebase_options.dart';
 
@@ -21,26 +19,13 @@ class MainApp extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    const FlexScheme usedScheme = FlexScheme.mallardGreen;
     final routes = ref.watch(routesProvider);
     return MaterialApp.router(
       debugShowCheckedModeBanner: false,
       routerConfig: routes,
-      theme: FlexThemeData.light(
-        scheme: usedScheme,
-        appBarElevation: 0.5,
-        useMaterial3: true,
-        textTheme: GoogleFonts.sourceCodeProTextTheme(),
-        typography: Typography.material2021(platform: defaultTargetPlatform),
-      ),
-      darkTheme: FlexThemeData.dark(
-        scheme: usedScheme,
-        appBarElevation: 2,
-        useMaterial3: true,
-        textTheme: GoogleFonts.sourceCodeProTextTheme(),
-        typography: Typography.material2021(platform: defaultTargetPlatform),
-      ),
-      themeMode: ThemeMode.light,
+      theme: WhiteBlacked.theme,
+      darkTheme: WhiteBlacked.darkTheme,
+      themeMode: ThemeMode.dark,
     );
   }
 }

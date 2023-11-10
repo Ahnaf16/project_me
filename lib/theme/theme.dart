@@ -2,7 +2,7 @@ import 'package:flex_color_scheme/flex_color_scheme.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class WhiteBlacked {
+class AppTheme {
   static final theme = FlexThemeData.light(
     colors: const FlexSchemeColor(
       primary: Color(0xff065808),

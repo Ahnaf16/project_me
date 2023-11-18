@@ -1,4 +1,5 @@
 export 'adaptive_body.dart';
+export 'animated_button.dart';
 export 'cached_img.dart';
 export 'divider.dart';
 export 'error_loader.dart';
